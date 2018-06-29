@@ -23,11 +23,6 @@ class Config:
         self.mdr = kwargs.get('mdr', .1)
         self.fpr = kwargs.get('fpr', .01)
         
-        # adding thresholds as optional config.
-        # setting the thresholds here should override the calculation
-        # of the thresholds from the mde and fpr defined above.
-        self.thresholds = lambda: kwargs.get('thresholds', None)
-        
         self.gamma = kwargs.get('gamma', 1)
         self.p0 = kwargs.get('p0', .12)
         self.user_default = kwargs.get('user_default', [.5, .5])

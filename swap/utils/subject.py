@@ -271,7 +271,7 @@ class Thresholds:
         """
         if self.thresholds is not None:
             return self.thresholds
-
+        """
         fpr = self.fpr
         mdr = self.mdr
 
@@ -333,7 +333,9 @@ class Thresholds:
 
         self.thresholds = bogus, real
         return self.thresholds
-
+        """
+        self.thresholds = 0.01, 0.9
+        return self.thresholds
 
 class ScoreStats:
 
